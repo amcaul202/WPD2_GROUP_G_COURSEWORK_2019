@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Projects</title>
+<body>
+
+<h1>Projects</h1>
+<p>This is a paragraph.</p>
+
+<form action="/createproject">
+    <input type="submit" value="Create a Project" />
+</form>
+
+<form action="/deleteproject">
+    <input type="submit" value="Delete a Project" />
+</form>
+
+<form action="/updateproject">
+    <input type="submit" value="Update a Project" />
+</form>
+
+<ul class="projects">
+    <% for(var i=0; i<projects.length; i++) {%>
+        <li class="projects">
+            <span><%= projects[i]._id %></span>
+            <span><%= projects[i].projectName %></span>
+            <span><%= projects[i].projectID %></span>
+        </li>
+    <% } %>
+</ul>
+
+<form action="/milestones">
+    <input type="submit" value="Milestone Page" />
+</form>
+
+<form action="/index">
+    <input type="submit" value="Index Page" />
+</form>
+
+</body>
+</html>

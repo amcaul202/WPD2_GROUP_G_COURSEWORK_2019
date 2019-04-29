@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Milestones</title>
+<body>
+
+<h1>Milestones</h1>
+<p>This is a paragraph.</p>
+
+<form action="/createmilestone">
+    <input type="submit" value="Create a Milestone" />
+</form>
+<form action="/deletemilestone">
+    <input type="submit" value="Delete a Milestone" />
+</form>
+<form action="/updatemilestone">
+    <input type="submit" value="Update a Milestone" />
+</form>
+
+<ul class="milestones">
+    <% for(var i=0; i<milestones.length; i++) {%>
+        <li class="milestones">
+            <span><%= milestones[i].milestoneID%></span>
+            <span><%= milestones[i].milestoneName %></span>
+            <span><%= milestones[i].milestoneDesc %></span>
+            <span><%= milestones[i].milestoneIntEnd %></span>
+            <span><%= milestones[i].milestoneActEnd %></span>
+            <span><%= milestones[i].projectID %></span>
+        </li>
+    <% } %>
+</ul>
+
+<form action="/index">
+    <input type="submit" value="Index Page" />
+</form>
+
+<form action="/projects">
+    <input type="submit" value="Project Page" />
+</form>
+
+</body>
+</html>

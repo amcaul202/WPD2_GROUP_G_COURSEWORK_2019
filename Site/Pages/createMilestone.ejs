@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>Create Milestone</title>
+<body>
+
+<h1>Create a Milestone</h1>
+<p>This is a paragraph.</p>
+
+<form id="formAddMilestone" name="addMilestone" method="post" action="/addmilestone">
+    <label>Milestone ID (Format: "1", "2", "3", ...)</label>
+    <input type="number" name="_id" placeholder="Enter Milestone ID" required>
+    </br>
+    <label>Milestone Reference ID (Format: "1", "2", "3", ...)</label>
+    <input type="number" name="milestoneID" placeholder="Enter Milestone Ref ID" required>
+    </br>
+    <label>Milestone Name (Format: "M" + [Milestone ID] {"M1, M2, M3, ...})</label>
+    <input type="text" name="milestoneName" placeholder="Enter Milestone Name" required>
+    </br>
+    <label>Milestone Description</label>
+    <input type="text" name="milestoneDesc" placeholder="Enter Description for Milestone" required>
+    </br>
+    <label>Indended End Date (Format: "DD/MM/YYYY")</label>
+    <input type="text" name="milestoneIntEnd" placeholder="Enter Intended End Date for Milestone" required>
+    </br>
+    <label>Actual End Date (Leave As "0" or "Intended End Date")</label>
+    <input type="text" name="milestoneActEnd" value="0" required>
+    </br>
+    <label>Completed (Format: "0" = NO, "1" = YES</label>
+    <input type="number" max="1" name="milestoneCompleted" value="0" required>
+    </br>
+    <label>Project ID that Milestone is attached too (Format: "1", "2", "3", ...)</label>
+    <input type="number" name="projectID" placeholder="Enter Project ID" required>
+    </br>
+    <input type="submit" value="Add Milestone">
+</form>
+
+</body>
+</html>
+

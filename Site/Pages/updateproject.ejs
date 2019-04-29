@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Update Project</title>
+<body>
+
+<h1>Update a Project</h1>
+<p>This is a paragraph.</p>
+
+<form id="formUpProject" name="updateProject" method="post" action="/updateproject">
+    <label>Project ID (Format: "1", "2", "3", ...)</label>
+    <input type="number" name="_id" placeholder="Enter Project ID" required>
+    <label>Project Name</label>
+    <input type="text" name="projectName" placeholder="Enter Project Name" required>
+    <label>Project Referance ID (Format: [first 3 letters project name] + [project id] {"pro1", "exa2"})</label>
+    <input type="text" name="projectID" placeholder="Enter Project ID" required>
+    <input type="submit" value="Update Project">
+</form>
+
+</body>
+</html>
+
